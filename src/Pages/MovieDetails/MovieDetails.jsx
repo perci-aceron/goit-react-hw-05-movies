@@ -10,6 +10,7 @@ import {
   MovieInfo,
   Title,
 } from './MovieDetails.styled';
+import noImage from '../../assets/images/no_image.jpg';
 
 import { HiArrowNarrowLeft } from 'react-icons/hi';
 
@@ -39,7 +40,7 @@ const MovieDetails = () => {
           src={
             poster_path
               ? `https://image.tmdb.org/t/p/w300${poster_path}`
-              : `http://www.suryalaya.org/images/no_image.jpg`
+              : noImage
           }
           width={320}
           height={380}

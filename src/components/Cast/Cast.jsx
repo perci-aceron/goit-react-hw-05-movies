@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getMovieCredits } from './../../Api/apiService';
 import { CastItem, CastList, Character, Name } from './Cast.styled';
+import noImage from '../../assets/images/no_image.jpg';
 
 const MAX_CAST_MEMBERS = 10;
 
@@ -23,7 +24,7 @@ const Cast = () => {
                 src={
                   profile_path
                     ? `https://image.tmdb.org/t/p/w200${profile_path}`
-                    : `http://www.suryalaya.org/images/no_image.jpg`
+                    : noImage
                 }
                 alt="actor"
                 loading="lazy"
